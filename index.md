@@ -13,8 +13,15 @@ knit        : slidify::knit2slides
 --- .class #id 
 
 ## Application Son's height prediction
-TODO - some words
-[Application](https://pkovar-shiny.shinyapps.io/DataProduct/)
+This [application](https://pkovar-shiny.shinyapps.io/DataProduct/) provides prediction of son's height based on father's height. The prediction linear regression model was built on top of the father.son dataset provided within UsingR package.
+
+Next slides show:
+
+1. Summary of father.son dataset
+2. Predictive lm model
+
+       *Up to 69.5inches(177cm) model predicts higher son..*
+3. Quiz. The application gives you an answer. 
 
 ---
 ## Dataset father.son
