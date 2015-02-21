@@ -1,0 +1,64 @@
+---
+title       : Application Son's height prediction
+subtitle    : Coursera project assignment
+author      : Petr Kovar
+job         : Data analyst
+framework   : io2012 # html5slides   # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [quiz, bootstrap]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+--- .class #id 
+
+## Application Son's height prediction
+TODO - some words
+[Application](https://pkovar-shiny.shinyapps.io/DataProduct/)
+
+---
+## Dataset father.son
+Data set father.son contains 1078 pairs of heights (father, son)
+This is a summary.
+
+```
+##     fheight        sheight    
+##  Min.   :59.0   Min.   :58.5  
+##  1st Qu.:65.8   1st Qu.:66.9  
+##  Median :67.8   Median :68.6  
+##  Mean   :67.7   Mean   :68.7  
+##  3rd Qu.:69.6   3rd Qu.:70.5  
+##  Max.   :75.4   Max.   :78.4
+```
+
+---
+## Linear regression model
+
+```r
+fit <- lm(sheight ~ fheight,data=father.son)
+```
+Intercept 33.89, slope 0.51 
+![plot of chunk plot](assets/fig/plot.png) 
+
+--- &radio
+## Quiz
+
+What is the predicted height (cm) of son whose father's height is 68.5 (inch)?
+
+1. 174
+2. _176_
+3. 69,1
+4. 67
+
+*** .hint
+Don't forget to use (cm) unit for result.
+
+*** .explanation
+The heigh is 69,1 inches which is 176 cm.
+
+
+
+
+
+
+
